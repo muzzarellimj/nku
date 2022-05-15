@@ -1,0 +1,26 @@
+# .gitignore to include common files to be ignored in repositories built with jetbrains ides
+#
+# last updated on 5-3-2022
+
+# global - directory-based project configuration
+.idea/
+
+# global - file-based project configuration
+*.iws
+*.iml
+*.ipr
+
+# intellij - java compilation
+out/
+
+# webstorm - dependency directory generated via npm install
+node_modules/
+
+# webstorm - manifestation of package.json generated via npm install
+package-lock.json
+
+# webstorm - dotenv environmental variable configuration file
+**/.env
+
+# macos - directory attribute file
+**/.DS_Store
