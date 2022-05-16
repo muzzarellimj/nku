@@ -1,0 +1,14 @@
+{
+	"name": "assignment-2",
+	"version": "0.0.1",
+	"description": "An introduction to JavaScript, Node.js, and MongoDB.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Michael Muzzarelli, muzzarellm1@nku.edu",
+	"license": "ISC",
+	"dependencies": {
+		"mongodb": "^4.4.1"
+	}
+}

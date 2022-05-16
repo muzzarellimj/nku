@@ -1,0 +1,16 @@
+{
+	"name": "assignment-8",
+	"version": "0.0.1",
+	"description": "A final assignment in conclusion of ASE 285.",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"test": "jest"
+	},
+	"author": "Michael Muzzarelli, muzzarellm1@nku.edu",
+	"license": "ISC",
+	"private": true,
+	"dependencies": {
+		"jest": "^28.0.3"
+	}
+}

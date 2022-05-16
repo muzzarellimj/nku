@@ -1,0 +1,12 @@
+{
+	"name": "assignment-7",
+	"version": "0.0.1",
+	"description": "ASE 285, assignment seven: security, encryption, and decryption",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Michael Muzzarelli, muzzarellm1@nku.edu",
+	"license": "ISC",
+	"private": true
+}

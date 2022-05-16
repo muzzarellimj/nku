@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<courses>
+    <course>
+        <name>Introduction to Linux</name>
+        <number>CIT 171</number>
+        <attended>T</attended>
+        <semester>Fall 2021</semester>
+        <professor>Emily Taylor</professor>
+    </course>
+
+    <course>
+        <name>Database Programming</name>
+        <number>CSC 350</number>
+        <attended>T</attended>
+        <semester>Fall 2021</semester>
+        <professor>Dr. Traian Truta</professor>
+    </course>
+
+    <course>
+        <name>Elementary Programming</name>
+        <number>INF 120</number>
+        <attended>T</attended>
+        <semester>Fall 2021</semester>
+        <professor>Jesse Hockenbury</professor>
+    </course>
+
+    <course>
+        <name>Foundations of Informatics Professionals</name>
+        <number>INF 201</number>
+        <attended>T</attended>
+        <semester>Fall 2021</semester>
+        <professor>Dave Groeschen</professor>
+    </course>
+
+    <course>
+        <name>Introduction to Web Development</name>
+        <number>INF 286</number>
+        <attended>T</attended>
+        <semester>Fall 2021</semester>
+        <professor>Hongmei Wang</professor>
+    </course>
+
+    <course>
+        <name>Human Relations in Organizations</name>
+        <number>LDR 205</number>
+        <attended>T</attended>
+        <semester>Fall 2021</semester>
+        <professor>Dr. Megan Downing</professor>
+    </course>
+
+    <course>
+        <name>Software Engineering and Security Fundamentals</name>
+        <number>ASE 285</number>
+        <attended>T</attended>
+        <semester>Spring 2022</semester>
+        <professor>Dr. Samuel Cho</professor>
+    </course>
+
+    <course>
+        <name>Full-Stack Application Development</name>
+        <number>ASE 220</number>
+        <attended>T</attended>
+        <semester>Spring 2022</semester>
+        <professor>Dr. Nicholas Caporusso</professor>
+    </course>
+
+    <course>
+        <name>Data Structures and Algorithms</name>
+        <number>CSC 364</number>
+        <attended>T</attended>
+        <semester>Spring 2022</semester>
+        <professor>Dr. Rasib Khan</professor>
+    </course>
+
+    <course>
+        <name>Information Ethics</name>
+        <number>PHI 310</number>
+        <attended>T</attended>
+        <semester>Spring 2022</semester>
+        <professor>Dr. Robert Brice</professor>
+    </course>
+
+    <course>
+        <name>Technical Writing</name>
+        <number>ENG 347</number>
+        <attended>T</attended>
+        <semester>Spring 2022</semester>
+        <professor>Dr. Thomas Bowers</professor>
+    </course>
+
+    <course>
+        <name>Server-Side Programming</name>
+        <number>ASE 230</number>
+        <attended>F</attended>
+        <semester>Fall 2022</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>Human-Computer Interaction</name>
+        <number>ASE 330</number>
+        <attended>F</attended>
+        <semester>Fall 2022</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>Software Design</name>
+        <number>ASE 420</number>
+        <attended>F</attended>
+        <semester>Fall 2022</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>Cross-Platform Development</name>
+        <number>ASE 456</number>
+        <attended>F</attended>
+        <semester>Fall 2022</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>iOS Mobile App Development</name>
+        <number>CSC 415</number>
+        <attended>F</attended>
+        <semester>Fall 2022</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>Applied Software Engineering Practicum</name>
+        <number>ASE 396</number>
+        <attended>F</attended>
+        <semester>Spring 2023</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>Applied Software Engineering Capstone</name>
+        <number>ASE 485</number>
+        <attended>F</attended>
+        <semester>Spring 2023</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>Introductory to Computer Networks</name>
+        <number>INF 284</number>
+        <attended>F</attended>
+        <semester>Spring 2023</semester>
+        <professor/>
+    </course>
+
+    <course>
+        <name>Introductory Discrete Mathematics</name>
+        <number>MAT 185</number>
+        <attended>F</attended>
+        <semester>Spring 2023</semester>
+        <professor/>
+    </course>
+</courses>
