@@ -1,0 +1,129 @@
+/* The 'Primary' theme will serve as the collection of stylesheet documents to be used in the first iteration */
+
+$color-palette: ('primary': #133960, 'secondary': #438874, 'tertiary': #A6A6A6, 'black': #000000, 'white': #FFFFFF)
+
+body
+	font-weight: 350
+	min-height: 100vh
+	overflow-x: hidden
+
+	.container-fluid
+		padding: 0 5vw
+
+		@media screen and (min-width: 576px)
+			padding: 0 7.5vw
+
+		@media screen and (min-width: 992px)
+			padding: 0 10vw
+
+		@media screen and (min-width: 1400px)
+			padding: 0 12.5vw
+
+.btn-primary
+	background-color: map-get($color-palette, 'primary')
+	border: none
+	color: map-get($color-palette, 'white')
+
+	&:hover
+		background: map-get($color-palette, 'secondary')
+
+.inline-link
+	color: map-get($color-palette, 'primary')
+	font-weight: 500
+	text-decoration: none
+
+	&:hover
+		color: map-get($color-palette, 'primary')
+		text-decoration: underline
+
+.statistic-text
+	font-size: 1rem
+
+.user-profile-section-heading
+	font-size: 1.75rem
+
+.card-img-top
+	height: 15vh
+	object-fit: cover
+
+/* class styles */
+header
+	background: map-get($color-palette, 'white')
+	box-shadow: 0 2px 10px rgb(0 0 0 / 25%)
+	min-height: 7.5vh
+
+	.navbar
+		margin: auto
+
+		.navbar-brand-image
+			height: 5vh
+
+		.nav-link
+			color: map-get($color-palette, 'primary')
+			font-size: 1.15rem
+
+		.btn-primary
+			font-size: 1.15rem
+
+main
+	padding: 2rem 0
+
+form
+	.form-check
+		font-size: 0.8rem
+
+		a
+			color: map-get($color-palette, 'primary')
+			font-weight: 500
+			text-decoration: none
+
+			&:hover
+				text-decoration-line: underline
+
+	.btn-primary
+		font-weight: 500
+
+	.form-textarea
+		height: 6rem !important
+		resize: none
+
+footer
+	background: map-get($color-palette, 'primary')
+	min-height: 15vh
+	margin: auto
+
+	.col-sm-4
+		padding-left: 7.5%
+
+	.footer-heading
+		color: map-get($color-palette, 'white')
+		font-size: 1rem
+		font-weight: 500
+		padding-bottom: 0.4rem
+
+	.footer-item
+		padding: 0.4rem 0
+
+	.bi
+		padding-right: 0.5rem
+
+	.footer-link
+		color: map-get($color-palette, 'white')
+		font-size: 0.9rem
+		text-decoration: none
+
+		&:hover
+			text-decoration-line: underline
+
+.discover
+	main
+		@media screen and (min-width: 576px)
+			min-height: 77.5vh
+
+	.content-heading
+		font-size: 1.75rem
+
+.upload
+	.form-textarea
+		height: 7.5rem !important
+		resize: none

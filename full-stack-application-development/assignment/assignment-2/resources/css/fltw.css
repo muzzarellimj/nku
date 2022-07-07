@@ -1,0 +1,265 @@
+/* import external font-family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+/* color palette based on bootstrap color palette (because i am not creative) */
+/* media breakpoint values based on bootstrap media breakpoint values (see above lack of creativity) */
+/* feature one of css preprocessor: @mixin and @include */
+/* @mixin to build per-element media breakpoints at media breakpoint value $sm */
+/* @mixin to build per-element media breakpoints at media breakpoint value $lg */
+/* feature two of css preprocessor: @function */
+/* block-element modifiers utilised in the entire document */
+.row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 992px) {
+  body {
+    margin-bottom: 300px;
+  }
+}
+body .navigation-link, body .navigation-link-highlight {
+  padding: 0 1.5vw;
+  text-decoration: none;
+}
+body .navigation-link:link, body .navigation-link-highlight:link {
+  color: #000;
+}
+body .navigation-link:visited, body .navigation-link-highlight:visited {
+  color: yellow;
+}
+body .navigation-link:hover, body .navigation-link-highlight:hover {
+  color: #FFF !important;
+}
+body .navigation-link:active, body .navigation-link-highlight:active {
+  border-bottom: #FFF solid;
+}
+body .navigation-link-highlight {
+  /* feature three of css preprocessor: @extend */
+  border: #FFF dashed 2.5px;
+}
+
+header {
+  background: #0d6efd;
+  height: 100px;
+}
+@media screen and (min-width: 576px) {
+  header {
+    height: 160px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    height: 240px;
+  }
+}
+header .header-logo-container {
+  align-self: center;
+  padding: 10px 0 10px 5vw;
+}
+@media screen and (min-width: 576px) {
+  header .header-logo-container {
+    padding: 10px 0 10px 5vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .header-logo-container {
+    padding: 20px 0 20px 5vw;
+  }
+}
+header .header-logo-container .header-logo-img {
+  height: 80px;
+}
+@media screen and (min-width: 576px) {
+  header .header-logo-container .header-logo-img {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .header-logo-container .header-logo-img {
+    height: 200px;
+  }
+}
+header .header-navigation-container {
+  align-self: center;
+  margin-left: auto;
+  padding-right: 5vw;
+}
+
+main {
+  height: 100%;
+}
+main .main-filter-container {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  main .main-filter-container {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main-filter-container {
+    width: 20%;
+  }
+}
+main .main-filter-container .filter-menu {
+  padding-left: 10%;
+  position: sticky;
+  width: 80%;
+  top: 2rem;
+}
+main .main-filter-container .filter-menu h3 {
+  max-width: 100%;
+}
+main .main-filter-container .filter-menu label {
+  max-width: 100%;
+  padding-top: 2rem;
+}
+main .main-filter-container .filter-menu input {
+  max-width: 90%;
+}
+main .main-filter-container .filter-menu select {
+  max-width: 90%;
+}
+main .main-filter-container .filter-menu .filter-menu-radio-group {
+  width: 50%;
+}
+main .main-filter-container .filter-menu .filter-menu-button-group {
+  width: 100%;
+  padding-top: 5rem;
+}
+main .main-filter-container .filter-menu .filter-menu-button-group input {
+  margin-right: auto;
+  width: 45%;
+}
+main .main-content-container {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  main .main-content-container {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main-content-container {
+    width: 80%;
+  }
+}
+main .main-content-container .item {
+  background: #6c757d;
+  margin: 2.5%;
+  width: 95%;
+}
+@media screen and (min-width: 576px) {
+  main .main-content-container .item {
+    margin: 2.5%;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main-content-container .item {
+    margin: 1.25%;
+    width: 22.5%;
+  }
+}
+main .main-content-container .item .item-image-container {
+  position: relative;
+}
+main .main-content-container .item .item-image-container .item-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+main .main-content-container .item .item-image-container .item-image-left-overlay {
+  top: 5%;
+  left: 5%;
+  position: absolute;
+}
+main .main-content-container .item .item-image-container .item-image-left-overlay img {
+  height: 30px;
+}
+main .main-content-container .item .item-image-container .item-image-right-overlay {
+  top: 5%;
+  right: 5%;
+  position: absolute;
+}
+main .main-content-container .item .item-image-container .item-image-right-overlay img {
+  height: 30px;
+}
+main .main-content-container .item .item-title-container {
+  text-align: center;
+  padding: 2.5%;
+  margin: auto;
+}
+main .main-content-container .item .item-title-container .item-title {
+  height: 100%;
+  display: block;
+  vertical-align: center;
+}
+main .main-content-container .item .item-button-container {
+  display: flex;
+  padding: 5%;
+}
+main .main-content-container .item .item-button-container .item-button {
+  background: #0d6efd;
+  color: #FFF;
+  margin: auto;
+  padding: 2.5%;
+  text-align: center;
+  text-decoration: none;
+  width: 40%;
+}
+main .main-content-container .item .item-button-container .item-button:visited {
+  background: #f8f9fa;
+  color: #000;
+}
+main .main-content-container .item .item-button-container .item-button:hover {
+  background: #FFF;
+  color: #0d6efd;
+}
+main .main-content-container .item .item-button-container .item-button:active {
+  background: #000;
+  color: #FFF;
+}
+
+footer {
+  background: #0d6efd;
+  height: 100px;
+}
+@media screen and (min-width: 576px) {
+  footer {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    bottom: 0;
+    height: 300px;
+    position: fixed;
+    width: 100%;
+  }
+}
+footer .footer-language-container {
+  align-self: center;
+  padding-left: 5vw;
+}
+footer .footer-navigation-container {
+  align-self: center;
+  margin-left: auto;
+  padding-right: 5vw;
+}
+
+/*# sourceMappingURL=fltw.css.map */

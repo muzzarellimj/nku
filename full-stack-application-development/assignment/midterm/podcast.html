@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>PodScholar</title>
+		<meta name="author" content="Robert Adams">
+
+		<link rel="icon" type="image/png" href="resources/img/logo/logo-black-64.png">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="resources/css/primary.css">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md h-100">
+				<div class="container-fluid">
+					<a class="navbar-brand mx-5" href="index.html">
+						<img class="navbar-brand-image" src="resources/img/logo/logo-primary-512.png" alt="PodScholar">
+					</a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="navbar-nav me-auto ms-5">
+							<li class="nav-item px-2"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item px-2"><a class="nav-link" href="discover.html">Discover</a></li>
+							<li class="nav-item px-2"><a class="nav-link" href="about.html">About</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container-xxl p-5">
+				<h2 id="podcast-title-heading" class="pb-2 border-bottom"></h2>
+
+				<!-- This element is currently styled inline and depending
+				on the settings of the webserver may not be able to stream
+				the audio properly. This is a server side issue and,
+				currently, beyond the scope of this project to fix -->
+				<div id="podcast-audio"></div>
+
+				<div id="podcast-description" class="py-2"></div>
+
+				<div id="podcast-page-metadata" class="col-12 border-top">
+					<div class="row">
+						<!-- Podcast Metadata -->
+						<div id="podcast-metadata" class="col-6 p-2">
+							<h3 class="text-center"><strong>About this Document</strong></h3>
+							<h4>Publication Information:</h4>
+							<table id="publication-information">
+								<tr>
+									<th id="title-of-research-document-field">Title:</th>
+									<td id="title-of-research-document-value"></td>
+								</tr>
+								<tr>
+									<th id="source-of-research-document-field">Source:</th>
+									<td id="source-of-research-document-value"></td>
+								</tr>
+								<tr>
+									<th id="doi-of-research-document-field">DOI:</th>
+									<td id="doi-of-research-document-value"></td>
+								</tr>
+								<tr>
+									<th id="date-of-research-document-field">Date:</th>
+									<td id="date-of-research-document-value"></td>
+								</tr>
+							</table>
+
+							<br />
+
+							<h4>Categorization:</h4>
+							<table id="categorization-information">
+								<tr>
+									<th id="category-of-research-document-field">Category:</th>
+									<td id="category-of-research-document-value"></td>
+								</tr>
+								<tr>
+									<th id="keywords-of-research-document-field">Keywords:</th>
+									<td id="keywords-of-research-document-value"></td>
+								</tr>
+							</table>
+						</div>
+
+						<!-- Author Metadata -->
+						<div id="author-metadata" class="col-6 p-2">
+							<h3 class="text-center"><strong>Author Information</strong></h3>
+							<img src="" alt="Profile picture of uploader" id="author-profile-picture" class="mx-auto">
+							<table id="author-information">
+								<tr>
+									<th id="author-name-field">Name:</th>
+									<td id="author-name-value"></td>
+								</tr>
+								<tr>
+									<th id="author-organization-field">Organization:</th>
+									<td id="author-organization-value"></td>
+								</tr>
+								<tr>
+									<th id="author-title-field">Title:</th>
+									<td id="author-title-value"></td>
+								</tr>
+								<tr>
+									<th id="author-email-field">Email:</th>
+									<td id="author-email-value"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="row px-5 py-4 h-100">
+				<div class="col-12 col-sm-4">
+					<div class="footer-heading">Navigation</div>
+
+					<div class="footer-item"><a class="footer-link" href="index.html">Home</a></div>
+					<div class="footer-item"><a class="footer-link" href="discover.html">Discover</a></div>
+					<div class="footer-item"><a class="footer-link" href="about.html">About</a></div>
+				</div>
+
+				<div class="col-12 col-sm-4">
+					<div class="footer-heading">Account</div>
+
+					<div class="footer-item"><a class="footer-link" href="register.html">Register</a></div>
+					<div class="footer-item"><a class="footer-link" href="user.html">View User Profile</a></div>
+					<div class="footer-item"><a class="footer-link" href="verification.html">Become an Author</a></div>
+				</div>
+
+				<div class="col-12 col-sm-4">
+					<div class="footer-heading">Social</div>
+
+					<div class="footer-item"><a class="footer-link" href="#"><i class="bi bi-github"></i>GitHub</a></div>
+					<div class="footer-item"><a class="footer-link" href="#"><i class="bi bi-linkedin"></i>LinkedIn</a></div>
+					<div class="footer-item"><a class="footer-link" href="#"><i class="bi bi-twitter"></i>Twitter</a></div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="resources/js/authentication.js"></script>
+		<script src="resources/js/build-navigation.js"></script>
+		<script src="resources/js/retrieve-data.js"></script>
+		<script src="resources/js/build-content.js"></script>
+
+		<script> buildPodcast(getAllUrlParams(window.location.href).id); </script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</body>
+</html>

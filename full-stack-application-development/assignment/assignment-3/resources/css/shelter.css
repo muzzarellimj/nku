@@ -1,0 +1,16 @@
+/* media breakpoint values align with current available Bootstrap media breakpoint values */
+/* index */
+#index-parent .card img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* detail */
+#detail-carousel-container {
+  height: 75vh;
+}
+#detail-carousel-container img {
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=shelter.css.map */

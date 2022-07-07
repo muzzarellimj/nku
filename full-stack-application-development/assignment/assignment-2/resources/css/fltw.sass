@@ -1,0 +1,277 @@
+/* import external font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap')
+
+/* color palette based on bootstrap color palette (because i am not creative) */
+$primary: #0d6efd
+$secondary: #6c757d
+$light: #f8f9fa
+$white: #FFF
+$black: #000
+
+/* media breakpoint values based on bootstrap media breakpoint values (see above lack of creativity) */
+$sm: 576px
+$lg: 992px
+
+/* feature one of css preprocessor: @mixin and @include */
+@mixin flex
+	@include full-height
+	@include full-width
+
+	display: flex
+
+@mixin full-height
+	height: 100%
+
+@mixin full-width
+	width: 100%
+
+@mixin half-width
+	width: 50%
+
+/* @mixin to build per-element media breakpoints at media breakpoint value $sm */
+@mixin at-small
+	@media screen and (min-width: $sm)
+		@content
+/* @mixin to build per-element media breakpoints at media breakpoint value $lg */
+@mixin at-large
+	@media screen and (min-width: $lg)
+		@content
+
+/* feature two of css preprocessor: @function */
+@function calculate-column-margin($column-count, $column-width)
+	$total-margin-width: 100% - ($column-count * $column-width)
+	$individual-margin-width: ($total-margin-width / $column-count) / 2
+
+	@return $individual-margin-width
+
+/* block-element modifiers utilised in the entire document */
+.row
+	@include flex
+
+	flex-flow: row wrap
+
+.col
+	@include flex
+
+	flex-flow: column wrap
+
+body
+	font-family: 'Poppins', sans-serif
+	margin: 0
+	padding: 0
+
+	@include at-large
+		margin-bottom: 300px
+
+	.navigation-link
+		padding: 0 1.5vw
+		text-decoration: none
+
+		&:link
+			color: $black
+
+		&:visited
+			color: yellow
+
+		&:hover
+			color: $white !important
+
+		&:active
+			border-bottom: $white solid
+
+		&-highlight
+			/* feature three of css preprocessor: @extend */
+			@extend .navigation-link
+
+			border: $white dashed 2.5px
+
+
+header
+	background: $primary
+	height: 100px
+
+	@include at-small
+		height: 160px
+
+	@include at-large
+		height: 240px
+
+	.header-logo-container
+		align-self: center
+		padding: 10px 0 10px 5vw
+
+		@include at-small
+			padding: 10px 0 10px 5vw
+
+		@include at-large
+			padding: 20px 0 20px 5vw
+
+		.header-logo-img
+			height: 80px
+
+			@include at-small
+				height: 140px
+
+			@include at-large
+				height: 200px
+
+	.header-navigation-container
+		align-self: center
+		margin-left: auto
+		padding-right: 5vw
+
+
+main
+	@include full-height
+
+	.main-filter-container
+		width: 100%
+
+		@include at-small
+			width: 30%
+
+		@include at-large
+			width: 20%
+
+		.filter-menu
+			padding-left: 10%
+			position: sticky
+			width: 80%
+			top: 2rem
+
+			h3
+				max-width: 100%
+
+			label
+				max-width: 100%
+				padding-top: 2rem
+
+			input
+				max-width: 90%
+
+			select
+				max-width: 90%
+
+			.filter-menu-radio-group
+				@include half-width
+
+			.filter-menu-button-group
+				@include full-width
+
+				padding-top: 5rem
+
+				input
+					margin-right: auto
+					width: 45%
+
+
+	.main-content-container
+		width: 100%
+
+		@include at-small
+			width: 70%
+
+		@include at-large
+			width: 80%
+
+		.item
+			$width: 95%
+
+			background: $secondary
+			margin: calculate-column-margin(1, $width)
+			width: $width
+
+			@include at-small
+				$width: 45%
+
+				margin: calculate-column-margin(2, $width)
+				width: $width
+
+			@include at-large
+				$width: 22.5%
+
+				margin: calculate-column-margin(4, $width)
+				width: $width
+
+			.item-image-container
+				position: relative
+
+				.item-image
+					@include full-height
+					@include full-width
+
+					object-fit: cover
+
+				.item-image-left-overlay
+					top: 5%
+					left: 5%
+					position: absolute
+
+					img
+						height: 30px
+
+				.item-image-right-overlay
+					top: 5%
+					right: 5%
+					position: absolute
+
+					img
+						height: 30px
+
+			.item-title-container
+				text-align: center
+				padding: 2.5%
+				margin: auto
+
+				.item-title
+					@include full-height
+
+					display: block
+					vertical-align: center
+
+			.item-button-container
+				display: flex
+				padding: 5%
+
+				.item-button
+					background: $primary
+					color: $white
+					margin: auto
+					padding: 2.5%
+					text-align: center
+					text-decoration: none
+					width: 40%
+
+					&:visited
+						background: $light
+						color: $black
+
+					&:hover
+						background: $white
+						color: $primary
+
+					&:active
+						background: $black
+						color: $white
+
+footer
+	background: $primary
+	height: 100px
+
+	@include at-small
+		height: 200px
+
+	@include at-large
+		bottom: 0
+		height: 300px
+		position: fixed
+		width: 100%
+
+	.footer-language-container
+		align-self: center
+		padding-left: 5vw
+
+	.footer-navigation-container
+		align-self: center
+		margin-left: auto
+		padding-right: 5vw

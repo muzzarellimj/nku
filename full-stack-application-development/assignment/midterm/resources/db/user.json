@@ -1,0 +1,109 @@
+[
+	{
+		"id": {
+			"user": "u00000000",
+			"author": null
+		},
+
+		"name": {
+			"first": "Michael",
+			"last": "Muzzarelli"
+		},
+
+		"account": {
+			"email": "muzzarellm1@nku.edu",
+			"password": "password",
+			"type": "user"
+		},
+
+		"profile": {
+			"avatar": "https://i.imgur.com/iza0pJ4.jpg"
+		},
+
+		"curation": {
+			"author": [ "a00000000", "a00000001" ],
+			"podcast": [ "p00000002" ]
+		}
+	},
+
+	{
+		"id": {
+			"user": "u00000001",
+			"author": "a00000000"
+		},
+
+		"name": {
+			"first": "Nicholas",
+			"last": "Caporusso"
+		},
+
+		"account": {
+			"email": "caporusson1@nku.edu",
+			"password": "password",
+			"type": "author"
+		},
+
+		"profile": {
+			"avatar": "https://i.imgur.com/wWbeuk9.jpg"
+		},
+
+		"curation": {
+			"author": [],
+			"podcast": []
+		}
+	},
+
+	{
+		"id": {
+			"user": "u00000002",
+			"author": "a00000001"
+		},
+
+		"name": {
+			"first": "Samuel",
+			"last": "Cho"
+		},
+
+		"account": {
+			"email": "chos5@nku.edu",
+			"password": "password",
+			"type": "author"
+		},
+
+		"profile": {
+			"avatar": "https://i.imgur.com/Ase4Xlz.jpg"
+		},
+
+		"curation": {
+			"author": [],
+			"podcast": []
+		}
+	},
+
+	{
+		"id": {
+			"user": "u00000003",
+			"author": "a00000002"
+		},
+
+		"name": {
+			"first": "Gabe",
+			"last": "Sanders"
+		},
+
+		"account": {
+			"email": "sandersg1@nku.edu",
+			"password": "password",
+			"type": "author"
+		},
+
+		"profile": {
+			"avatar": "https://i.imgur.com/tMtziWc.jpg"
+		},
+
+		"curation": {
+			"author": [],
+			"podcast": []
+		}
+	}
+]

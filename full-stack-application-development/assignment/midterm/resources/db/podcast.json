@@ -1,0 +1,76 @@
+[
+	{
+		"id": {
+			"author": "a00000000",
+			"object": "10.23919/MIPRO52101.2021.9597153",
+			"podcast": "p00000000"
+		},
+
+		"content": {
+			"audio": "resources/mp3/ron-gelinas-chillout-lounge-relief.mp3",
+			"title": "Improved PIN Input for the Visually Impaired",
+			"description": "A new method for improving the trade-off between security and accessibility in PIN-based authentication systems and a solution that aims at minimizing the threats posed by malicious agents while maintaining a low level of complexity for the user."
+		},
+
+		"publication": {
+			"source": "IEEE",
+			"title": "An Improved PIN Input Method for the Visually Impaired",
+			"date": "2021-09-27"
+		},
+
+		"categorization": {
+			"category": "Computer Science",
+			"keyword": [ "biometric", "authentication", "cyber security", "accessibility", "pin" ]
+		}
+	},
+
+	{
+		"id": {
+			"author": "a00000001",
+			"object": "10.15781/T2BC3T30C",
+			"podcast": "p00000001"
+		},
+
+		"content": {
+			"audio": "resources/mp3/ron-gelinas-chillout-lounge-relief.mp3",
+			"title": "Internet of Things: Context Sharing Tradeoffs",
+			"description": "Emerging IoT applications require devices to share information about their context with one another. However, as each IoT device has different capabilities, it may also have different priorities with respect to sharing context with nearby devices."
+		},
+
+		"publication": {
+			"source": "The University of Texas at Austin",
+			"title": "Navigating tradeoffs in context sharing among the Internet of Things",
+			"date": "2017-04-18"
+		},
+
+		"categorization": {
+			"category": "Computer Science",
+			"keyword": [ "iot", "bluetooth", "context" ]
+		}
+	},
+
+	{
+		"id": {
+			"author": "a00000002",
+			"object": "10.53520/rdhs2022.10431",
+			"podcast": "p00000002"
+		},
+
+		"content": {
+			"audio": "resources/mp3/ron-gelinas-chillout-lounge-relief.mp3",
+			"title": "Exercise and Disease Prevention",
+			"description": "Research has shown that monitoring exercise and physical activity with wearable technology can improve health outcomes."
+		},
+
+		"publication": {
+			"source": "Research Directs in Health Sciences",
+			"title": "Physical Activity and Exercise for Optimal Disease Prevention: Clinical Evidence",
+			"date": "2022-01-10"
+		},
+
+		"categorization": {
+			"category": "Exercise Science",
+			"keyword": [ "preventative", "exercise", "strategy" ]
+		}
+	}
+]

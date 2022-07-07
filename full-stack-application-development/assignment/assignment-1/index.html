@@ -1,0 +1,190 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>introdHTML Yourself</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+		<style>
+			body {
+				background: #F5DDB1;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			.profile-image {
+				border-radius: 50%;
+				height: 20vh;
+			}
+
+			.affinity-image {
+				border-radius: 50%;
+				height: 12.5vh;
+				object-fit: cover;
+				width: 12.5vh;
+			}
+
+			@media (max-width: 600px) {
+				body {
+					background: #FFC7AD;
+				}
+			}
+
+			@media (min-width: 750px) {
+				body {
+					background: #D0AADA;
+				}
+			}
+
+			@media (min-width: 900px) {
+				body {
+					background: #8992E9;
+				}
+			}
+
+			@media (min-width: 1000px) {
+				body {
+					background: #ADDAE2;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center py-3">
+					<h1>Hello! My name is Michael Muzzarelli.</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col text-center py-3">
+					<img class="profile-image align-self" src="https://i.imgur.com/iza0pJ4.jpg" alt="family photo of myself and my wife, Amelia">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col py-3">
+					<h4 class="pb-2 border-bottom">Please allow me to explain a bit about my life:</h4>
+
+					<div class="accordion py-3" id="about-accordion">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="about-accordion-personal-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#about-accordion-personal-collapse" aria-expanded="true" aria-controls="about-accordion-personal-collapse">
+									Personal
+								</button>
+							</h2>
+
+							<div class="accordion-collapse collapse show" id="about-accordion-personal-collapse" aria-labelledby="about-accordion-personal-header">
+								<div class="accordion-body">
+									<p><strong>I try each day to have a deep appreciation for life, no matter how difficult it may seem.</strong> My support system - my wife, Amelia, and our dog, Dude - make this all the more attainable. Amelia and I were married in our favorite outdoor space in June 2017, and we welcomed Dude into our family via foster fail in April 2019. We relocated from our small suburb of Collinsville, IL in October 2021 in order for me to attend Northern Kentucky University, and my wife was offered a position at Fidelity, which made the move a bit more manageable.</p>
+									<p>When I am not in school, I can be found trying out local restaurants and coffee shops, purchasing books that I don't have space for, playing video games (usually (almost always) RuneScape), and working on various personal programming projects.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="about-accordion-educational-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#about-accordion-educational-collapse" aria-expanded="true" aria-controls="about-accordion-educational-collapse">
+									Educational
+								</button>
+							</h2>
+
+							<div class="accordion-collapse collapse show" id="about-accordion-educational-collapse" aria-labelledby="about-accordion-educational-header">
+								<div class="accordion-body">
+									<p><strong>I have never been particularly 'good' at school.</strong> To be fair, I did well enough in middle and high school, but that was primarily with a goal in mind of finishing high school early so that I no longer had to attend. I graduated from high school in December 2015 and, as what I thought was a smart financial decision, started attending a local community college the following January. I did not do well with the alarmingly different structure and, after a few stressful semesters, decided that college was not a good fit for me (or I for it) at that time.</p>
+									<p>I ultimately returned to that community college some time later and graduated with an Associate of Science degree in May 2021. I had decided on a local university to further my education, but after finding the applied software engineering program, decided to enroll at NKU and continue my academic ventures here. I intend to graduate with a Bachelor of Science in Applied Software Engineering with a minor in computer science in May 2023, and I intend to maintain a much higher GPA and consistency of learning than I was previously able.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="about-accordion-professional-header">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#about-accordion-professional-collapse" aria-expanded="true" aria-controls="about-accordion-professional-collapse">
+									Professional
+								</button>
+							</h2>
+
+							<div class="accordion-collapse collapse show" id="about-accordion-professional-collapse" aria-labelledby="about-accordion-professional-header">
+								<div class="accordion-body">
+									<p><strong>In deciding what I wanted to explore as a career, I knew one thing: I needed to find purpose.</strong> I started working in libraries when I was in high school and quickly understood the enormous impact they have on communities. I took a short stint away from libraries after getting married, but soon returned to field working as a community outreach coordinator for a local library district. I loved the work, I loved the people, and I loved the purpose that I found in the position, but I came to a revelation: I should not seek purpose in a job. That is something that I have struggled with for my entire adult life, but I believe an education in technology will help: it will provide me with opportunities to make an impact in a variety of capacities, but it will also provide a stable income with which I can do all the good I want.</p>
+									<p>As a software engineer, I would love to work in a library (or other non-profit) environment, but I am content with working in any environment that provides me the means to find purpose in things more important than work. I can be found <a href="https://www.linkedin.com/in/muzzarellimj">here</a> on LinkedIn.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-between py-3">
+				<h4 class="pb-2 border-bottom">These are a few of my favorite things:</h4>
+
+				<div class="col-12 col-sm-2 py-3">
+					<img class="affinity-image" src="https://i.imgur.com/OZBfbgc.jpg" alt="favorite musical artist: nic d">
+				</div>
+
+				<div class="col-12 col-sm-2 py-3">
+					<img class="affinity-image" src="https://i.imgur.com/F1CGkE3.png" alt="favorite game: runescape">
+				</div>
+
+				<div class="col-12 col-sm-2 py-3">
+					<img class="affinity-image" src="https://i.imgur.com/Jwabwwn.jpg" alt="favorite animal: my dog, dude">
+				</div>
+
+				<div class="col-12 col-sm-2 py-3">
+					<img class="affinity-image" src="https://i.imgur.com/hl5kD0D.jpg" alt="favorite show: superstore">
+				</div>
+
+				<div class="col-12 col-sm-2 py-3">
+					<img class="affinity-image" src="https://i.imgur.com/sGEew8P.jpg" alt="favorite drink: coffee">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col py-3">
+					<h4 class="pb-2 border-bottom">Reach out to me:</h4>
+
+					<form class="py-3">
+						<div class="row mb-3">
+							<div class="col-6">
+								<input class="form-control" id="first-name" type="text" placeholder="First name" aria-label="First name">
+							</div>
+
+							<div class="col-6">
+								<input class="form-control" id="last-name" type="text" placeholder="Last name" aria-label="Last name">
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<input class="form-control" type="email" id="email" placeholder="email@domain.com">
+						</div>
+
+						<div class="mb-3">
+							<textarea class="form-control" id="message" rows="3" placeholder="Enter a message here..."></textarea>
+						</div>
+
+						<div class="row justify-content-between">
+							<div class="col-5">
+								<input class="btn btn-primary w-100" type="submit">
+							</div>
+
+							<div class="col-5">
+								<input class="btn btn-danger w-100" type="reset">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>

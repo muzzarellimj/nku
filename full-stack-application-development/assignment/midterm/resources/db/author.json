@@ -1,0 +1,64 @@
+[
+	{
+		"id": {
+			"author": "a00000000",
+			"researcher": "0000-0002-8661-4868"
+		},
+
+		"institution": {
+			"organization": "Northern Kentucky University",
+			"title": "Assistant Professor"
+		},
+
+		"profile": {
+			"about": "BSc and MSc in Informatics from the University of Bari and PhD in Computer Science and Engineering from IMT – Institute for Advanced Studies. Master and PhD theses received two awards by the Italian Association for Automatic Calculus (AICA)."
+		},
+
+		"work": {
+			"creator": [ "p00000000" ],
+			"contributor": []
+		}
+	},
+
+	{
+		"id": {
+			"author": "a00000001",
+			"researcher": "0000-0001-6267-2468"
+		},
+
+		"institution": {
+			"organization": "Northern Kentucky University",
+			"title": "Assistant Professor"
+		},
+
+		"profile": {
+			"about": "I believe software engineering tools, methodologies, philosophies, design approaches, systems thinking, and processes can be used to to solve broader types of problems outside software development—individual, team, and even country development."
+		},
+
+		"work": {
+			"creator": [ "p00000001" ],
+			"contributor": []
+		}
+	},
+
+	{
+		"id": {
+			"author": "a00000002",
+			"researcher": "0000-0002-8324-3176"
+		},
+
+		"institution": {
+			"organization": "Northern Kentucky University",
+			"title": "MSES Graduate Program Director"
+		},
+
+		"profile": {
+			"about": "Gabe specializes in sports science research design and proper analysis of internal and external workload data to help coaches better understand the demands of their respective sport and the impact it can have on their athletes."
+		},
+
+		"work": {
+			"creator": [ "p00000002" ],
+			"contributor": []
+		}
+	}
+]

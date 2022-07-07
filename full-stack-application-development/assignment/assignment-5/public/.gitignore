@@ -1,0 +1,7 @@
+# .gitignore re: public directory wherein json files are generated
+
+# ignore example.json - we use this as a reference file for GET and PUT
+!example.json
+
+# ignore all other json files - these are manipulated via POST and DELETE
+*.json

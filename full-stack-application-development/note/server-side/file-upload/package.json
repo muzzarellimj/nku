@@ -1,0 +1,16 @@
+{
+	"name": "file-upload",
+	"version": "0.0.1",
+	"description": "An Express application to illustrate file uploading with Multer.",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Michael Muzzarelli, muzzarellm1@nku.edu",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.3",
+		"multer": "^1.4.4"
+	}
+}
