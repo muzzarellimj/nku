@@ -1,0 +1,23 @@
+{
+	"name": "server-side-development/assignment-7",
+	"description": "An exercise in data retrieval and revision, authentication, and object-oriented programming.",
+	"minimum-stability": "stable",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Michael Muzzarelli",
+			"email": "muzzarellm1@nku.edu"
+		}
+	],
+	"require-dev": {
+		"pestphp/pest": "^1.22"
+	},
+	"config": {
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		}
+	},
+	"scripts": {
+		"test": "./vendor/bin/pest"
+	}
+}
