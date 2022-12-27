@@ -13,6 +13,12 @@
 # intellij - java compilation
 out/
 
+# phpstorm - dependency directory generated via composer install
+vendor/
+
+# phpstorm - manifestation of composer.json generated via composer install
+composer.lock
+
 # webstorm - dependency directory generated via npm install
 node_modules/
 
