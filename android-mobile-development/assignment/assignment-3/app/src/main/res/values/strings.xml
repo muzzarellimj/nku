@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DetailFragment</string>
+    <string name="sprite_context_description">A default, nondescript sprite of a Pokemon.</string>
+    <string name="pokemon_height_label">Height:</string>
+    <string name="pokemon_height_symbol">\"</string>
+    <string name="pokemon_weight_label">Weight:</string>
+    <string name="pokemon_weight_symbol"> lbs</string>
+</resources>

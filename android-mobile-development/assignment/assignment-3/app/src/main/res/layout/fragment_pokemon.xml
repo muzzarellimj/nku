@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pokemon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="32dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/pokemon_sprite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_name"
+        android:padding="8dp"
+        android:contentDescription="@string/sprite_context_description" />
+
+    <LinearLayout
+        android:id="@+id/pokemon_height_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_sprite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pokemon_height_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="0dp"
+            android:paddingEnd="12dp"
+            android:text="@string/pokemon_height_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pokemon_height"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/pokemon_height_label"
+            app:layout_constraintTop_toTopOf="@id/pokemon_height_label"
+            tools:text="7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/pokemon_height"
+            app:layout_constraintTop_toTopOf="@id/pokemon_height"
+            android:text="@string/pokemon_height_symbol"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pokemon_weight_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toEndOf="@id/pokemon_height_container"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_sprite"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pokemon_weight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="0dp"
+            android:paddingEnd="12dp"
+            android:text="@string/pokemon_weight_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pokemon_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/pokemon_weight_label"
+            app:layout_constraintTop_toTopOf="@id/pokemon_weight_label"
+            tools:text="43"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toEndOf="@id/pokemon_weight"
+            app:layout_constraintTop_toTopOf="@id/pokemon_weight"
+            android:text="@string/pokemon_weight_symbol"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

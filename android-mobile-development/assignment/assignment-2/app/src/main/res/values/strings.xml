@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <string name="label_name">Name:</string>
+    <string name="label_tier">Tier:</string>
+    <string name="label_race">Race:</string>
+    <string name="label_description">Description:</string>
+    <string name="image_content_description">An image of this God or Goddess.</string>
+</resources>
