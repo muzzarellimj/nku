@@ -10,6 +10,18 @@
 *.iml
 *.ipr
 
+# build - gradle project cache
+.gradle/
+
+# build - gradle local environment properties
+**/local.properties
+
+# android studio - project build output
+build/
+
+# android studio - layout inspector capture output
+captures/
+
 # intellij - java compilation
 out/
 
