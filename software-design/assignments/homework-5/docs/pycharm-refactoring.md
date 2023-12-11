@@ -1,0 +1,7 @@
+# Refactoring with PyCharm
+
+Video is available [here](https://www.youtube.com/watch?v=4kzEbqaT2DY&ab_channel=PyCharmbyJetBrains). I watched this video on Wednesday, November 1, 2023.
+
+1. Python has a refactoring context menu which contains thirteen tools, three of which were discussed in the video: rename, change signature, move, copy, introduce variable, introduce constant, intoduce field, introduce parameter, extract method, extract superclass, inline, pull members up, and push members down.
+
+2. Rename and change signature can be compared to the ["simplifying method calls"](https://refactoring.guru/refactoring/techniques/simplifying-method-calls) refactoring techniques; e.g., rename matches [rename method](https://refactoring.guru/rename-method). Introduce variable, introduce constant, intoduce field, introduce parameter, extract method, extract superclass, and inline can all be compared to the corresponding [composing methods](https://refactoring.guru/refactoring/techniques) refactoring techniques; e.g., introduce variable matches [extract variable](https://refactoring.guru/extract-variable). Pull members up and push members down can both be compared to the corresponding ["dealing with generalization"](https://refactoring.guru/refactoring/techniques/dealing-with-generalization) refactoring techniques; e.g., pull members up matches [pull up field](https://refactoring.guru/pull-up-field), [pull up method](https://refactoring.guru/pull-up-method), and [pull up constructor body](https://refactoring.guru/pull-up-constructor-body).
